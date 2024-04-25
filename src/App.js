@@ -53,7 +53,7 @@ function App() {
       </Routes>
 
 
-      <Mobile/>
+      {/* <Mobile/> */}
       {/* <Polarturn/>
       <Polar360/>
       <Form/>

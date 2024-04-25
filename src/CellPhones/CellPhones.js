@@ -3,7 +3,7 @@ import React from 'react'
 export const CellPhones = () => {
   return (
     <div className='container'>
-    <h1 className='prodect-heading'>Cell Phones</h1>
+    <h1 style={{paddingTop:'80px'}} className='prodect-heading'>Cell Phones</h1>
     <div className="row mb-5">
       <div className="col-md-4">
         <div className="items-prodects">
