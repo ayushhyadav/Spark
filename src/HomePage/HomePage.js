@@ -1,51 +1,29 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./HomePage.css";
 import Scroller from "./Scroller";
 
+
 function HomePage() {
-  const categories = ["Cell Phones", "Speakers & Headphones", "Laptops & Tablets"];
-
-  const specialOffers = [
-    {
-      img: "assets/img8.webp",
-      description: "PJX Gaming Laptop 15.6\", 512GB",
-      oldPrice: "$1800.00",
-      newPrice: "$1,350.00"
-    },
-    {
-      img: "assets/img5.webp",
-      description: "Ove Tablet FD plus 12.3\",64GB",
-      oldPrice: "$900.00",
-      newPrice: "$675.00"
-    },
-    {
-      img: "assets/img6.webp",
-      description: "VOLVO Smart Home Speaker",
-      oldPrice: "$550.00",
-      newPrice: "$412.50"
-    },
-    {
-      img: "assets/img7.webp",
-      description: "Polar Float Wireless Speaker",
-      oldPrice: "$150.00",
-      newPrice: "$112.50"
-    }
-  ];
-
-  const brands = ["VOLVE", "HERA", "SOVIX", "PJX", "POLAR"];
-
+ 
   return (
     <div>
-      <Scroller />
+    <Scroller/>
+   
       <div className="main2">
         <h1 className="main2-head">Shop by Category</h1>
         <div className="main3">
-          {categories.map((category, index) => (
-            <div style={{width:'100%',maxWidth:'35.1rem'}} className="main2-sub" key={index}>
-              <img style={{width:'100%'}} src={`assets/img${index + 1}.webp`} alt="" />
-              <p className="main3-p">{category}</p>
-            </div>
-          ))}
+          <div className="main2-sub">
+            <img src="assets/img1.webp" alt="" />
+            <p className="main3-p">Cell Phones</p>
+          </div>
+          <div className="main2-sub">
+            <img src="assets/img2.webp" alt="" />
+            <p className="main3-p">Speakers & Headphones</p>
+          </div>
+          <div className="main2-sub">
+            <img src="assets/img3.webp" alt="" />
+            <p className="main3-p">Laptops & Tablets</p>
+          </div>
         </div>
       </div>
       <div className="main4">
@@ -57,18 +35,44 @@ function HomePage() {
         </div>
       </div>
       <div className="main5">
-        {specialOffers.map((item, index) => (
-          <div style={{width:'100%',maxWidth:'26rem', }} className="main-sub5" key={index}>
-            <a className="img-btn absolute">SALE</a>
-            <img style={{width:'100%'}} src={item.img} alt="" />
-            <a href="">
-              {item.description}
-              <br />
-              <strike>{item.oldPrice}</strike>
-              {item.newPrice}
-            </a>
-          </div>
-        ))}
+        <div className="main-sub5">
+          <a className="img-btn absolute">SALE</a>
+          <img src="assets/img8.webp" alt="" />
+
+          <a href="">
+            PJX Gaming Laptop 15.6", 512GB <br />
+            <strike>$1800.00</strike>$1,350.00
+          </a>
+        </div>
+        <div className="main-sub5">
+          <a className="img-btn absolute">SALE</a>
+
+          <img src="assets/img5.webp" alt="" />
+
+          <a href="">
+            Ove Tablet FD plus 12.3",64GB <br />
+            <strike>$900.00</strike>$675.00
+          </a>
+        </div>
+        <div className="main-sub5">
+          <a className="img-btn absolute">SALE</a>
+          <img src="assets/img6.webp" alt="" />
+
+          <a href="">
+            VOLVO Smart Home Speaker <br />
+            <strike>$550.00</strike>$412.50
+          </a>
+        </div>
+        <div className="main-sub5">
+          <a className="img-btn absolute">SALE</a>
+          <img src="assets/img7.webp" alt="" />
+
+          <a href="">
+            Polar Float Wireless Speaker
+            <br />
+            <strike>$150.00</strike>$112.50
+          </a>
+        </div>
       </div>
       <div className="main6">
         <div className="mainsub-6">
@@ -93,9 +97,11 @@ function HomePage() {
       <div className="main8">
         <p className="main8-para">Our Brands</p>
         <div className="main8-sub1">
-          {brands.map((brand, index) => (
-            <p className={`main8sub-para${index + 1}`} key={index}>{brand}</p>
-          ))}
+          <p className="main8sub-para1">VOLVE</p>
+          <p className="main8sub-para2">HERA</p>
+          <p className="main8sub-para3">SOVIX</p>
+          <p className="main8sub-para4">PJX</p>
+          <p className="main8sub-para5">POLAR</p>
         </div>
       </div>
     </div>

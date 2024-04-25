@@ -1,29 +1,11 @@
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
 import "./Header.css";
 
 
 
 function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.pageYOffset > 0;
-      setIsScrolled(scrolled);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
-    <header
-    className={`header-head ${isScrolled ? "scrolled" : ""}`}
-    style={{  width: "100%", zIndex: "1" }}
-    >
+    <header style={{position:'fixed',width:'100%', zIndex:'2'}} className="header-head">
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Sparke</a>

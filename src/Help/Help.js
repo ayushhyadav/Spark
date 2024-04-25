@@ -4,9 +4,9 @@ import "./Help.css";
 function Help() {
   return (
     <div>
-      <div  className="help">
-        <div  style={{paddingTop:'90px',}} className="help1 help-c">
-          <h1  className="help-head">Sparke Help Center</h1>
+      <div className="help">
+        <div className="help1 help-c">
+          <h1 className="help-head">Sparke Help Center</h1>
           <div className="help2">
             <p className="help-para">FAQ</p>
           </div>

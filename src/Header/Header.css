@@ -1,6 +1,5 @@
 header.header-head .collapse {
   visibility: visible;
-  
 }
 
 header.header-head a.navbar-brand {
@@ -62,21 +61,8 @@ ul.dropdown-menu .dropdown-item {
 }
 
 header.header-head {
-  background-color: transparent;
-  /* margin-bottom: 50px; */
-  /* background-color: #fff; */
+  margin-bottom: 50px;
 }
-.header-head {
-  position: fixed;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-}
-
-.header-head.scrolled {
-  /* position:absolute; */
-  background-color: white;
-}
-
 
 .dropdown .dropdown-toggle::after {
   content: none;

@@ -1,8 +1,7 @@
 .main2 {
     width: 100%;
     height: auto;
-   
-    min-height: 460px;
+    min-height: 360px;
     background-color: #f0f0f0;
     background-attachment: fixed;
 }
@@ -11,22 +10,16 @@
 .main2-head {
     font-size: xx-large;
     font-weight: 600;
-    /* padding: 0px; */
-    padding-top: 130px;
+    padding-top: 110px;
     padding-left: 40px;
 
 }
 
 .main3 {
-    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 45px;
-    width: 100%;
-    /* gap: 25px; */
-
-
+    gap: 25px;
 }
 
 .main3-p {
@@ -78,12 +71,9 @@
 .main5 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /* gap: 30px; */
-     width: 100%;
-    padding: 45px;
-    /* padding-left: 25px; */
-    /* padding-bottom: 50px; */
+    gap: 30px;
+    padding-left: 25px;
+    padding-bottom: 50px;
 }
 
 .img-btn {
@@ -317,7 +307,7 @@
 }
 
 .main-sub1-img {
-    /* padding-left: 0px; */
+    padding-left: 30px;
 }
 
 .main-sub3 {
@@ -380,9 +370,6 @@
   
 
 @media only screen and (max-width: 768px) {
-    .panels{
-        display: none;
-    }
     .main-sub1-para {
         font-size: 36px;
         line-height: 40px;
